@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <title>Classify</title>
+  </head>
+  <body class="body">
+    <div class="app">
+      <div class="app__item btns-container" action="">
+        <label class="btn btn--active" for="file-selection">
+          Choose File
+        </label>
+        <input
+          class="input__file-selection visually-hidden"
+          id="file-selection"
+          type="file"
+        />
+        <a class="btn btn__file-downloading">Download results</a>
+      </div>
+      <div class="app__item image__container">
+        <img class="image" src="./assets/images/welcome.jpg" alt="" />
+      </div>
+    </div>
+    <script src="js/client/index.js" type="module"></script>
+  </body>
+</html>
